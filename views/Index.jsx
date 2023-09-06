@@ -7,9 +7,10 @@ function Index({pokemon}){
     pokemon.map(pokemon => {
         let f = pokemon.name[0]
         f = f.toUpperCase()
-        let full = f + pokemon.name.slice(1,pokemon.name.length)
+        let full = f + pokemon.name.slice(1)
         pokemon.name = full
     })
+    // console.log(pokemon)
     return (
         <>
             <h1>Pokemon</h1>
